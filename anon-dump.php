@@ -1,8 +1,9 @@
 #!/usr/bin/env php
 <?php
 /**
- * (c) 2013 IMAGIN IT Marcin Engelmann
- * 
+ * Copyright (c) 2014 IMAGIN Sp. z o.o.
+ * http://octivi.com
+ *
  * License:  This  program  is  free  software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as published by
  * the  Free Software Foundation; either version 3 of the License, or (at your
@@ -11,7 +12,7 @@
  * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
  * Public License for more details.
  * 
- * @author Kamil Chłodnicki <kchlodnicki@imagin.pl>
+ * @author Kamil Chłodnicki
  */
  
 // Configure paths to mysqldump and mysql executables 
@@ -22,8 +23,8 @@ define('PATH_MYSQL', 'mysql');
 // Don't edit below this line :-)
 
 $header = <<<HEAD
-(c) 2013 IMAGIN IT Marcin Engelmann
-Database dump with query executer
+(c) 2014 IMAGIN Sp. z o.o.
+Anony-Dump the anonymized database clone maker
 HEAD;
 
 define('IMAGIN_HEADER', $header);
