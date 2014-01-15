@@ -24,7 +24,7 @@ define('PATH_MYSQL', 'mysql');
 
 $header = <<<HEAD
 (c) 2014 IMAGIN Sp. z o.o.
-Anony-Dump the anonymized database clone maker
+Anon-Dump the anonymized database clone maker
 HEAD;
 
 define('IMAGIN_HEADER', $header);

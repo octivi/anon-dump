@@ -1,4 +1,4 @@
-Octivi - Anony-Dump the anonymized database clone maker
+Octivi - Anon-Dump the anonymized database clone maker
 ======================================
 
 This simple tool will allow you to make anonymized clone of your database.
