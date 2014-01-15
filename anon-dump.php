@@ -42,8 +42,8 @@ if ($argc < 2 || $argc > 4) {
     fwrite(STDERR, " config_file\tPath to the file with config. Ex.: config.php (optional)".PHP_EOL);
     fwrite(STDERR, " --force\tOverwrite the clone if it already exists. (optional)".PHP_EOL . "\t\tMakes 'DROP DATABASE' on configured clone database.". PHP_EOL . PHP_EOL);
     fwrite(STDERR, "Sample usage:".PHP_EOL);
-	fwrite(STDERR, " $ php anon-dump.php query.sql > dump.sql".PHP_EOL);
-	fwrite(STDERR, '==================================================' . PHP_EOL);
+    fwrite(STDERR, " $ php anon-dump.php query.sql > dump.sql".PHP_EOL);
+    fwrite(STDERR, '==================================================' . PHP_EOL);
     
     die(1);
 }
@@ -90,13 +90,13 @@ class AnonDump
         $this->query = file_get_contents($queryFile);
         $this->username = $username;
         $this->password = $password;
-		
+        
         if ($username && $password) {
-			$this->connection = new PDO($server, $username, $password);
+            $this->connection = new PDO($server, $username, $password);
         } else {
-			$this->connection = new PDO($server);
+            $this->connection = new PDO($server);
         }
-		
+        
         $this->database = $database;
         $this->clone = $clone;
         $this->force = $force;
@@ -148,8 +148,8 @@ class AnonDump
         } else {
             $dump = PATH_MYSQLDUMP . ' ' . $db;
             $pipe = ' | ' . PATH_MYSQL . ' ' . $clone;
-        }		
-		
+        }        
+        
         exec($dump . $pipe);
 
         return true;
